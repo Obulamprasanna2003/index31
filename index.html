@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Temperature Converter</title>
+    <style>
+        body{
+    background-image: linear-gradient(yellow,pink,skyblue,pink,red);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1{
+    text-shadow: 0px 2px 3px rgb(31, 31, 31),0px 2px 4px rgb(249, 247, 247);
+    color: aliceblue;
+}
+button:hover{
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: aqua;
+}
+    </style>
+    
+</head>
+
+<body>
+  <center> <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="inputs">
+            <div style="display: flex;
+            flex-direction: column;">
+                <label for="degree" style="padding-bottom: 10px;">Value <span id="small">(In Numbers...)</span></label>
+               <center><input type="number" name="degree" id="inputValue" required style="width: 200px;"></center> 
+            </div>
+            <div class="inptsss">
+                <div style="padding-top: 10px;">
+                    <label for="type">From</label>
+                    <select name="type" id="type1">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                    </select>
+                </div>
+                <div style="padding-top: 10px; padding-bottom: 10px;">
+                    <label for="type">To</label>
+                    <select name="type" id="type2">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="btn" onclick="temperature()" style="background-color: blue;">Convert</button>
+        <div class="resultss" style="padding-top: 10px;">
+            <label for="result" style="color: aliceblue; font-size:25px;">Result</label>
+            <div id="result"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Designed by <a href="https://www.linkedin.com/in/obulam-yogendra-lakshmi-prasanna-300a94269">YOGENDRA LAKSHMI PRASANNA</a></p>
+    </div></center> 
+    <script src="temp.js"></script>
+</body>
+
+</html>
